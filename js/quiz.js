@@ -4,35 +4,22 @@ window.onload = function init() {
 
 function getdata(once, ops = null) {
 
-    if (!once) {
-        var targetURL = "https://opentdb.com/api.php?amount=1&category=9&difficulty=easy&type=multiple"
-        var request = new XMLHttpRequest();
-
-        request.open('GET', targetURL)
-        request.responseType = 'json';
-        request.send();
-
-        request.onload = function () {
-            var structure = request.response;
-            expand(structure);
-        }
-    }
-    else {
-
+    if (once) {
         for (let i = 0; i < 4; ++i) {
             ops[i].style.background = "turquoise";
         }
-        var targetURL = "https://opentdb.com/api.php?amount=1&category=9&difficulty=easy&type=multiple"
-        var request = new XMLHttpRequest();
+    }
+    
+    var targetURL = "https://opentdb.com/api.php?amount=1&category=9&difficulty=easy&type=multiple"
+    var request = new XMLHttpRequest();
 
-        request.open('GET', targetURL)
-        request.responseType = 'json';
-        request.send();
+    request.open('GET', targetURL)
+    request.responseType = 'json';
+    request.send();
 
-        request.onload = function () {
-            var structure = request.response;
-            expand(structure);
-        }
+    request.onload = function () {
+        var structure = request.response;
+        expand(structure);
     }
 }
 
