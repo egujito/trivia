@@ -79,8 +79,10 @@ main
 button
 {
     width: 40vh;
-    height: 3.75rem;
+    height: 6vh;
     border: 0;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
     outline: none;
     background: turquoise;
     color:black;
@@ -111,7 +113,7 @@ button
 .restart
 {
     width: 50vh;
-    height: 3.75rem;
+    height: 6vh;
     border: 0;
     outline: none;
     background:	#baf2ef;
@@ -129,4 +131,9 @@ button
 .restart:hover
 {
     background: coral;
+}
+
+.restart::after, .restart:focus,.restart:active
+{
+    background:turquoise !important;
 }
