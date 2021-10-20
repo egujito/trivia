@@ -78,7 +78,7 @@ main
 
 button
 {
-    width: 15.625rem;
+    width: 40vh;
     height: 3.75rem;
     border: 0;
     outline: none;
@@ -110,7 +110,7 @@ button
 }
 .restart
 {
-    width: 25%;
+    width: 50vh;
     height: 3.75rem;
     border: 0;
     outline: none;
@@ -123,7 +123,7 @@ button
     transition: var(--transition-speed);
     position: relative;
     overflow: hidden;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .restart:hover
