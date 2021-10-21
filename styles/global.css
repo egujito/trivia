@@ -6,13 +6,13 @@
     --text--secondary: #ececec;
     --bg-primary: #23232e;
     --bg-secondary: #141418;
-    --transition-speed: 600ms;
+    --transition-speed: 200ms;
 }
 
 body
 {
-    color: black;
-    background-color: white;
+    color: lightgray;
+    background-color: #282A36;
     margin: 0;
     padding: 0;    
 }
@@ -54,7 +54,7 @@ main
 .question
 {
     text-align: center;
-    color:black;
+    color:lightgray;
     font-size: 1.5625rem;
 }
 
@@ -84,7 +84,7 @@ button
     margin-top: 3vh;
     margin-bottom: 3vh;
     outline: none;
-    background: turquoise;
+    background: #BD93F9;
     color:black;
     font-size: 1.375rem;
     border-radius: 2.5rem;
@@ -93,30 +93,13 @@ button
     transition: var(--transition-speed);
 }
 
-.option1:hover
-{
-    background: yellow !important;
-}
-
-.option2:hover
-{
-    background: yellow !important;
-}
-.option3:hover
-{
-    background: yellow !important;
-}
-.option4:hover
-{
-    background: yellow !important;
-}
 .restart
 {
     width: 50vh;
     height: 6vh;
     border: 0;
     outline: none;
-    background:	#baf2ef;
+    background:	#BD93F9;
     color:black;
     font-size: 1.375rem;
     border-radius: 2.5rem;
@@ -126,14 +109,4 @@ button
     position: relative;
     overflow: hidden;
     cursor: pointer;
-}
-
-.restart:hover
-{
-    background: coral;
-}
-
-.restart::after, .restart:focus,.restart:active
-{
-    background:turquoise !important;
 }
